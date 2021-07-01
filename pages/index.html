@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script type="module" src="js/gameLogic.mjs"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="content">
+        <div class="left">
+            <div class="game">
+                <span class="idleDisplay">Earning Every Second<br>0</span>
+                <img draggable="false" src="images/cookie.png">
+                <span class="score">0</span>
+            </div>
+        </div>
+
+        <div class="right">
+            <ul class="powerUps">
+                <li class="powerUp">
+                    <button class="purchaseBtn" id="clicks" disabled>
+                        <div>
+                            <span>Clicks</span>
+                            <span class="price">Price: 0 cookies</span>
+                        </div>
+                        <span>0</span>
+                    </button>
+                </li>
+                <li class="powerUp">
+                    <button class="purchaseBtn" id="workers" disabled>
+                        <div>
+                            <span>Workers</span>
+                            <span class="price">Price: 0 cookies</span>
+                        </div>
+                        <span>0</span>
+                    </button>
+                </li>
+                <li class="powerUp">
+                    <button class="purchaseBtn" id="machines" disabled>
+                        <div>
+                            <span>Machine</span>
+                            <span class="price">Price: 0 cookies</span>
+                        </div>
+                        <span>0</span>
+                    </button>
+                </li>
+                <li class="powerUp">
+                    <button class="purchaseBtn" id="factories" disabled>
+                        <div>
+                            <span>Factory</span>
+                            <span class="price">Price: 0 cookies</span>
+                        </div>
+                        <span>0</span>
+                    </button>
+                </li>
+            </ul>
+
+            <div class="quotes">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

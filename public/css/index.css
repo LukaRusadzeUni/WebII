@@ -1,0 +1,182 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+@media (max-width: 900px){
+    body {
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+}
+
+body {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.game img {
+    transition: all 0.15s;
+    border-radius: 100%;
+    height: 450px;
+    width: 450px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.game img:hover {
+    transition: all 0.15s;
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.game img:active {
+    transform: scale(1.1);
+    transition: all 0.15s;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    margin-top: 15px;
+}
+
+.score {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    color:rgba(255, 255, 255, 0.562);
+}
+
+.powerUps {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    padding: 0;
+    margin: 0;
+    width: 450px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.powerUp {
+    margin-bottom: 7px;
+}
+
+.purchaseBtn {
+    border: 0;
+    background-color: rgba(102, 102, 102, 0.473);
+    border: 10px solid rgba(107, 107, 107, 0.329);
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: 0.1s all ease;
+    font-size: 20px;
+}
+
+.purchaseBtn:disabled {
+    color:rgba(163, 163, 163, 0.562);
+}
+
+.purchaseBtn:enabled {
+    color:rgba(255, 255, 255, 0.562);
+}
+
+.purchaseBtn div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.price {
+    font-size: 11px;
+}
+
+.purchaseBtn:hover {
+    background-color: rgba(78, 78, 78, 0.637);
+    border: 10px solid rgba(78, 78, 78, 0.637);
+    transition: 0.1s all ease;
+    cursor: pointer;
+}
+
+.purchaseBtn:active {
+    background-color: rgba(78, 78, 78, 0.774);
+    border: 10px solid rgba(78, 78, 78, 0.76);
+    transition: 0.1s all ease;
+    cursor: pointer;
+}
+
+.powerUp, .powerUp .purchaseBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+    height: 70px;
+}
+
+.powerUp:hover .powerUp .purchaseBtn {
+    background-color: rgba(146, 146, 146, 0.918);
+}
+
+.idleDisplay {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color:rgba(255, 255, 255, 0.562);
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+}
+.right {
+    justify-content: center;
+    margin-top: 20px;
+}
+.left {
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.quotes {
+    margin-top: 20px;
+    width: 450px;
+    height: 100px;
+    color:rgba(255, 255, 255, 0.562);
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+
+ul { display: list-item } 
+
+button > * {
+    pointer-events: none;
+}
+
+* {
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
